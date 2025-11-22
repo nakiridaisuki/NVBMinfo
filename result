@@ -1,0 +1,97 @@
+xhpl20.10-hpl:
+ELF file    1: xhpl20.1.sm_60.cubin
+ELF file    2: xhpl20.2.sm_70.cubin
+ELF file    3: xhpl20.3.sm_80.cubin
+ 
+xhpl21.4-hpl:
+ELF file    1: xhpl21.1.sm_60.cubin
+ELF file    2: xhpl21.2.sm_70.cubin
+ELF file    3: xhpl21.3.sm_80.cubin
+ 
+xhpl23.10:
+ELF file    1: xhpl23.1.sm_80.cubin
+ELF file    2: xhpl23.2.sm_90.cubin
+ELF file    3: xhpl23.3.sm_52.cubin
+ 
+xhpl23.3:
+ELF file    1: xhpl23.1.sm_80.cubin
+ELF file    2: xhpl23.2.sm_90.cubin
+ELF file    3: xhpl23.3.sm_52.cubin
+ 
+xhpl23.5:
+ELF file    1: xhpl23.1.sm_80.cubin
+ELF file    2: xhpl23.2.sm_90.cubin
+ELF file    3: xhpl23.3.sm_52.cubin
+ 
+xhpl24.03:
+ELF file    1: xhpl24.1.sm_80.cubin
+ELF file    2: xhpl24.2.sm_90.cubin
+ELF file    3: xhpl24.3.sm_80.cubin
+ELF file    4: xhpl24.4.sm_90.cubin
+ 
+xhpl24.06:
+ELF file    1: xhpl24.1.sm_80.cubin
+ELF file    2: xhpl24.2.sm_90.cubin
+ELF file    3: xhpl24.3.sm_80.cubin
+ELF file    4: xhpl24.4.sm_90.cubin
+ 
+xhpl24.09:
+ELF file    1: xhpl24.1.sm_80.cubin
+ELF file    2: xhpl24.2.sm_90.cubin
+ELF file    3: xhpl24.3.sm_80.cubin
+ELF file    4: xhpl24.4.sm_90.cubin
+ 
+xhpl25.02:
+ELF file    1: xhpl25.1.sm_80.cubin
+ELF file    2: xhpl25.2.sm_90.cubin
+ELF file    3: xhpl25.3.sm_100.cubin
+ELF file    4: xhpl25.4.sm_80.cubin
+ELF file    5: xhpl25.5.sm_90.cubin
+ELF file    6: xhpl25.6.sm_100.cubin
+ 
+xhpl25.04:
+ELF file    1: xhpl25.1.sm_80.cubin
+ELF file    2: xhpl25.2.sm_90.cubin
+ELF file    3: xhpl25.3.sm_100.cubin
+ELF file    4: xhpl25.4.sm_80.cubin
+ELF file    5: xhpl25.5.sm_90.cubin
+ELF file    6: xhpl25.6.sm_100.cubin
+ELF file    7: xhpl25.7.sm_80.cubin
+ELF file    8: xhpl25.8.sm_90.cubin
+ELF file    9: xhpl25.9.sm_100.cubin
+ELF file   10: xhpl25.10.sm_101.cubin
+ELF file   11: xhpl25.11.sm_120.cubin
+ELF file   12: xhpl25.12.sm_80.cubin
+ELF file   13: xhpl25.13.sm_90.cubin
+ELF file   14: xhpl25.14.sm_100.cubin
+ELF file   15: xhpl25.15.sm_101.cubin
+ELF file   16: xhpl25.16.sm_120.cubin
+ELF file   17: xhpl25.17.sm_90.cubin
+ELF file   18: xhpl25.18.sm_80.cubin
+ELF file   19: xhpl25.19.sm_120.cubin
+ELF file   20: xhpl25.20.sm_100a.cubin
+ELF file   21: xhpl25.21.sm_101a.cubin
+ 
+xhpl25.09:
+ELF file    1: xhpl25.1.sm_80.cubin
+ELF file    2: xhpl25.2.sm_90.cubin
+ELF file    3: xhpl25.3.sm_100a.cubin
+ELF file    4: xhpl25.4.sm_80.cubin
+ELF file    5: xhpl25.5.sm_89.cubin
+ELF file    6: xhpl25.6.sm_90.cubin
+ELF file    7: xhpl25.7.sm_80.cubin
+ELF file    8: xhpl25.8.sm_90.cubin
+ELF file    9: xhpl25.9.sm_100.cubin
+ELF file   10: xhpl25.10.sm_101.cubin
+ELF file   11: xhpl25.11.sm_120.cubin
+ELF file   12: xhpl25.12.sm_80.cubin
+ELF file   13: xhpl25.13.sm_90.cubin
+ELF file   14: xhpl25.14.sm_100.cubin
+ELF file   15: xhpl25.15.sm_101.cubin
+ELF file   16: xhpl25.16.sm_120.cubin
+ELF file   17: xhpl25.17.sm_90.cubin
+ELF file   18: xhpl25.18.sm_80.cubin
+ELF file   19: xhpl25.19.sm_120.cubin
+ELF file   20: xhpl25.20.sm_100a.cubin
+ELF file   21: xhpl25.21.sm_101a.cubin
+ 
