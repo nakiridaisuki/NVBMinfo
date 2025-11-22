@@ -6,9 +6,9 @@ SIF_DIR="$HOME/sifs"
 
 set -e
 
-if [ ! -d "$DEST_DIR" ]; then
-    echo "Making directory: $DEST_DIR"
-    mkdir -p "$DEST_DIR"
+if [ ! -d "$SIF_DIR" ]; then
+    echo "Making directory: $SIF_DIR"
+    mkdir -p "$SIF_DIR"
 fi
 
 echo "Start processing"
@@ -22,7 +22,7 @@ for version in "${VERSIONS[@]}"; do
     DOCKER_URI="docker://nvcr.io/nvidia/hpc-benchmarks:${version}"
 
     echo "Step 1: Pulling singularity image"
-    singularity pull "${SIF_FILE##*/}" "$DOCKER_URI"
+    singularity pull --dir $SIF_DIR $SIF_FILE $DOCKER_URI
     echo "Pull success: $SIF_FILE"
     echo ""
 
