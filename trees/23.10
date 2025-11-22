@@ -1,0 +1,80 @@
+/home/ubuntu/workspaces/23.10
+└── workspace
+    ├── hpcg-linux-x86_64
+    │   ├── COPYRIGHT-HPCG-3.1
+    │   ├── hpcg.sh
+    │   ├── README.md
+    │   ├── RUNNING
+    │   ├── TUNING
+    │   └── xhpcg
+    ├── hpcg.sh -> hpcg-linux-x86_64/hpcg.sh
+    ├── hpl-linux-x86_64
+    │   ├── COPYRIGHT-HPL-2.1
+    │   ├── hpl.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   ├── hpcg.dat
+    │   │   ├── HPL-1024GPUs.dat -> HPL-dgx-128N.dat
+    │   │   ├── HPL-128GPUs.dat -> HPL-dgx-16N.dat
+    │   │   ├── HPL-16GPUs.dat -> HPL-dgx-2N.dat
+    │   │   ├── HPL-1GPU.dat -> HPL-dgx-1N-1.dat
+    │   │   ├── HPL-256GPUs.dat -> HPL-dgx-32N.dat
+    │   │   ├── HPL-2GPUs.dat -> HPL-dgx-1N-2.dat
+    │   │   ├── HPL-32GPUs.dat -> HPL-dgx-4N.dat
+    │   │   ├── HPL-4GPUs.dat -> HPL-dgx-1N-4.dat
+    │   │   ├── HPL-512GPUs.dat -> HPL-dgx-64N.dat
+    │   │   ├── HPL-64GPUs.dat -> HPL-dgx-8N.dat
+    │   │   ├── HPL-8GPUs.dat -> HPL-dgx-1N.dat
+    │   │   ├── HPL-dgx-128N.dat
+    │   │   ├── HPL-dgx-16N.dat
+    │   │   ├── HPL-dgx-1N-1.dat
+    │   │   ├── HPL-dgx-1N-2.dat
+    │   │   ├── HPL-dgx-1N-4.dat
+    │   │   ├── HPL-dgx-1N.dat
+    │   │   ├── HPL-dgx-2N.dat
+    │   │   ├── HPL-dgx-32N.dat
+    │   │   ├── HPL-dgx-4N.dat
+    │   │   ├── HPL-dgx-64N.dat
+    │   │   └── HPL-dgx-8N.dat
+    │   ├── sample-slurm
+    │   │   ├── hpcg-enroot-1N.sub
+    │   │   ├── hpcg-enroot-8N.sub
+    │   │   ├── hpcg-singularity-1N.sub
+    │   │   ├── hpcg-singularity-8N.sub
+    │   │   ├── hpl-enroot-1N.sub
+    │   │   ├── hpl-enroot-8N.sub
+    │   │   ├── hpl-singularity-1N.sub
+    │   │   └── hpl-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl
+    ├── hpl-mxp-linux-x86_64
+    │   ├── COPYRIGHT-CLI11
+    │   ├── hpl-mxp.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-slurm
+    │   │   ├── hpl-mxp-enroot-16N.sub
+    │   │   ├── hpl-mxp-enroot-1N.sub
+    │   │   ├── hpl-mxp-enroot-2N.sub
+    │   │   ├── hpl-mxp-enroot-32N.sub
+    │   │   ├── hpl-mxp-enroot-4N.sub
+    │   │   ├── hpl-mxp-enroot-64N.sub
+    │   │   ├── hpl-mxp-enroot-8N.sub
+    │   │   ├── hpl-mxp-singularity-1N.sub
+    │   │   └── hpl-mxp-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl_mxp
+    ├── hpl-mxp.sh -> hpl-mxp-linux-x86_64/hpl-mxp.sh
+    ├── hpl.sh -> hpl-linux-x86_64/hpl.sh
+    ├── NVIDIA_Deep_Learning_Container_License.pdf
+    ├── stream-gpu-linux-x86_64
+    │   ├── LICENSE-STREAM-5.10.txt
+    │   ├── README-STREAM-5.10.txt
+    │   ├── stream-gpu-test.sh
+    │   ├── stream_test
+    │   └── stream_test_fp32
+    ├── stream-gpu-test.sh -> stream-gpu-linux-x86_64/stream-gpu-test.sh
+    └── third_party.txt
+
+8 directories, 69 files

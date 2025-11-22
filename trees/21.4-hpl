@@ -1,0 +1,50 @@
+/home/ubuntu/workspaces/21.4-hpl
+└── workspace
+    ├── hpl-ai-linux-x86_64
+    │   ├── COPYRIGHT-HPL-2.1
+    │   ├── HPL.dat
+    │   ├── README
+    │   ├── run_1_node_dgx1_v100x4.sh
+    │   ├── run_1_node_dgx1_v100x8.sh
+    │   ├── run_linpack_GPU_dgx1_4xv100.sh
+    │   ├── run_linpack_GPU_dgx1_8xv100.sh
+    │   ├── run_linpack_inexe_desktop_4GPU.sh
+    │   ├── run_linpack_inexe_hsw_4GPU.sh
+    │   ├── run_linpack_inexe_selene.sh
+    │   ├── run_linpack_inexe.sh
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   ├── HPL-dgx-a100-16N.dat
+    │   │   ├── HPL-dgx-a100-1N.dat
+    │   │   ├── HPL-dgx-a100-2N.dat
+    │   │   ├── HPL-dgx-a100-4N.dat
+    │   │   └── HPL-dgx-a100-8N.dat
+    │   ├── sample-slurm
+    │   │   ├── hpl-ai-enroot-dgx-a100-1N.sub
+    │   │   ├── hpl-ai-enroot-dgx-a100-8N.sub
+    │   │   ├── hpl-ai-singularity-dgx-a100-1N.sub
+    │   │   └── hpl-ai-singularity-dgx-a100-8N.sub
+    │   ├── TUNING
+    │   └── xhpl_ai
+    ├── hpl-linux-x86_64
+    │   ├── COPYRIGHT-HPL-2.1
+    │   ├── hpl.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   ├── HPL-dgx-a100-16N.dat
+    │   │   ├── HPL-dgx-a100-1N.dat
+    │   │   ├── HPL-dgx-a100-2N.dat
+    │   │   ├── HPL-dgx-a100-4N.dat
+    │   │   └── HPL-dgx-a100-8N.dat
+    │   ├── sample-slurm
+    │   │   ├── hpl-enroot-dgx-a100-1N.sub
+    │   │   ├── hpl-enroot-dgx-a100-8N.sub
+    │   │   ├── hpl-singularity-dgx-a100-1N.sub
+    │   │   └── hpl-singularity-dgx-a100-8N.sub
+    │   ├── TUNING
+    │   └── xhpl
+    ├── hpl.sh -> /workspace/hpl-linux-x86_64/hpl.sh
+    └── third_party.txt
+
+7 directories, 40 files
