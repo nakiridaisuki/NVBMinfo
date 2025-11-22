@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INFO_DIR=./datas
+INFO_DIR=$HOME/NVBMinfo/datas
 EXEC_DIR=$HOME/execs
 FILE_IDs=$(ls -1 $EXEC_DIR)
 
