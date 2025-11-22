@@ -10,4 +10,4 @@ for sif in $sifs; do
     singularity run $SIF_DIR/$sif ~/NVBMinfo/get_exec.sh $file_id
 done
 
-singularity run $SIF_DIR/${sifs[-1]} ~/NVBMinfo/extract.sh
+singularity run $SIF_DIR/${sifs[10]} ~/NVBMinfo/extract.sh
