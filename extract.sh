@@ -1,13 +1,13 @@
 #!/bin/bash
 
-RESULT=./result
-XHPL_DIR=execs
-xhpls=$(ls -1 $XHPL_DIR/*)
+INFO_DIR=./datas
+EXEC_DIR=$HOME/execs
+FILE_IDs=$(ls -1 $EXEC_DIR)
 
-rm $RESULT
-
-for xhpl in $xhpls; do
-    echo ${xhpl/$XHPL_DIR\/}: | tee -a $RESULT
-    cuobjdump -lelf $xhpl | tee -a $RESULT
-    echo -e ' ' | tee -a $RESULT
+for id in $FILE_IDs; do
+    exec_path=$EXEC_DIR/$id
+    execs=$(ls -1 $exec_path)
+    for exec in $execs; do
+        cuobjdump -lelf $exec_path/$exec | tee -a $INFO_DIR/$id/$exec
+    done
 done
