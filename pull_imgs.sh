@@ -14,7 +14,7 @@ for version in $VERSIONS; do
     echo "--------------------------------------------------"
     echo ">> Processing Version: $version"
 
-    SIF_FILE="${SIF_DIR}/hpc-benchmarks:${version}.sif"
+    SIF_FILE="hpc-benchmarks:${version}.sif"
     DOCKER_URI="docker://nvcr.io/nvidia/hpc-benchmarks:${version}"
 
     echo "Pulling singularity image"

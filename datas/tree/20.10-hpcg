@@ -1,0 +1,20 @@
+./tmp/workspaces/20.10-hpcg
+└── workspace
+    ├── hpcg-linux-x86_64
+    │   ├── COPYRIGHT-HPCG-3.1
+    │   ├── hpcg.sh
+    │   ├── README.md
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   └── hpcg-1N.dat
+    │   ├── sample-slurm
+    │   │   ├── hpcg-enroot-dgx-a100-1N.sub
+    │   │   ├── hpcg-enroot-dgx-a100-8N.sub
+    │   │   ├── hpcg-singularity-dgx-a100-1N.sub
+    │   │   └── hpcg-singularity-dgx-a100-8N.sub
+    │   ├── TUNING
+    │   └── xhpcg
+    ├── hpcg.sh -> /workspace/hpcg-linux-x86_64/hpcg.sh
+    └── third_party.txt
+
+4 directories, 13 files

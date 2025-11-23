@@ -1,0 +1,336 @@
+./tmp/workspaces/25.09
+└── workspace
+    ├── hpc-benchmarks-gpu-env.sh
+    ├── hpcg-linux-x86_64
+    │   ├── COPYRIGHT-HPCG-3.1
+    │   ├── hpcg.sh
+    │   ├── README.md
+    │   ├── RUNNING-x86
+    │   ├── sample-dat
+    │   │   └── hpcg.dat
+    │   ├── sample-slurm
+    │   │   ├── hpcg-enroot-dgx-1N.sub
+    │   │   ├── hpcg-enroot-dgx-8N.sub
+    │   │   ├── hpcg-singularity-dgx-1N.sub
+    │   │   └── hpcg-singularity-dgx-8N.sub
+    │   ├── TUNING
+    │   └── xhpcg
+    ├── hpcg.sh -> hpcg-linux-x86_64/hpcg.sh
+    ├── hpl-linux-x86_64
+    │   ├── COPYRIGHT-HPL-2.1
+    │   ├── hpl.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   ├── HPL-1024GPUs.dat -> HPL-dgx-128N.dat
+    │   │   ├── HPL-128GPUs.dat -> HPL-dgx-16N.dat
+    │   │   ├── HPL-16GPUs.dat -> HPL-dgx-2N.dat
+    │   │   ├── HPL-1GPU.dat -> HPL-dgx-1N-1.dat
+    │   │   ├── HPL-256GPUs.dat -> HPL-dgx-32N.dat
+    │   │   ├── HPL-2GPUs.dat -> HPL-dgx-1N-2.dat
+    │   │   ├── HPL-32GPUs.dat -> HPL-dgx-4N.dat
+    │   │   ├── HPL-4GPUs.dat -> HPL-dgx-1N-4.dat
+    │   │   ├── HPL-512GPUs.dat -> HPL-dgx-64N.dat
+    │   │   ├── HPL-64GPUs.dat -> HPL-dgx-8N.dat
+    │   │   ├── HPL-8GPUs.dat -> HPL-dgx-1N.dat
+    │   │   ├── HPL-B200-128GPUs.dat
+    │   │   ├── HPL-B200-16GPUs.dat
+    │   │   ├── HPL-B200-1GPU.dat
+    │   │   ├── HPL-B200-256GPUs.dat
+    │   │   ├── HPL-B200-2GPUs.dat
+    │   │   ├── HPL-B200-32GPUs.dat
+    │   │   ├── HPL-B200-4GPUs.dat
+    │   │   ├── HPL-B200-512GPUs.dat
+    │   │   ├── HPL-B200-64GPUs.dat
+    │   │   ├── HPL-B200-8GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-128GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-16GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-1GPU.dat
+    │   │   ├── HPL-B200-FP64EMU-256GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-2GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-32GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-4GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-512GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-64GPUs.dat
+    │   │   ├── HPL-B200-FP64EMU-8GPUs.dat
+    │   │   ├── HPL-B200-OOC-128GPUs.dat
+    │   │   ├── HPL-B200-OOC-16GPUs.dat
+    │   │   ├── HPL-B200-OOC-1GPUs.dat
+    │   │   ├── HPL-B200-OOC-2GPUs.dat
+    │   │   ├── HPL-B200-OOC-32GPUs.dat
+    │   │   ├── HPL-B200-OOC-4GPUs.dat
+    │   │   ├── HPL-B200-OOC-64GPUs.dat
+    │   │   ├── HPL-B200-OOC-8GPUs.dat
+    │   │   ├── HPL-dgx-128N.dat
+    │   │   ├── HPL-dgx-16N.dat
+    │   │   ├── HPL-dgx-1N-1.dat
+    │   │   ├── HPL-dgx-1N-2.dat
+    │   │   ├── HPL-dgx-1N-4.dat
+    │   │   ├── HPL-dgx-1N.dat
+    │   │   ├── HPL-dgx-2N.dat
+    │   │   ├── HPL-dgx-32N.dat
+    │   │   ├── HPL-dgx-4N.dat
+    │   │   ├── HPL-dgx-64N.dat
+    │   │   ├── HPL-dgx-8N.dat
+    │   │   ├── HPL-GB200-FP64EMU-144GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-16GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-1GPU.dat
+    │   │   ├── HPL-GB200-FP64EMU-2GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-36GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-4GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-72GPUs.dat
+    │   │   ├── HPL-GB200-FP64EMU-8GPUs.dat
+    │   │   ├── HPL-GB200-OOC-128GPUs.dat
+    │   │   ├── HPL-GB200-OOC-16GPUs.dat
+    │   │   ├── HPL-GB200-OOC-1GPUs.dat
+    │   │   ├── HPL-GB200-OOC-2GPUs.dat
+    │   │   ├── HPL-GB200-OOC-32GPUs.dat
+    │   │   ├── HPL-GB200-OOC-4GPUs.dat
+    │   │   ├── HPL-GB200-OOC-64GPUs.dat
+    │   │   ├── HPL-GB200-OOC-8GPUs.dat
+    │   │   ├── HPL-GH-128GPUs.dat
+    │   │   ├── HPL-GH-16GPUs.dat
+    │   │   ├── HPL-GH-1GPU.dat
+    │   │   ├── HPL-GH-256GPUs.dat
+    │   │   ├── HPL-GH-2GPUs.dat
+    │   │   ├── HPL-GH-32GPUs.dat
+    │   │   ├── HPL-GH-4GPUs.dat
+    │   │   ├── HPL-GH-512GPUs.dat
+    │   │   ├── HPL-GH-64GPUs.dat
+    │   │   ├── HPL-GH-8GPUs.dat
+    │   │   ├── HPL-H200-16GPUs.dat
+    │   │   ├── HPL-H200-1GPU.dat
+    │   │   ├── HPL-H200-2GPUs.dat
+    │   │   ├── HPL-H200-32GPUs.dat
+    │   │   ├── HPL-H200-4GPUs.dat
+    │   │   ├── HPL-H200-8GPUs.dat
+    │   │   ├── HPL-OOC-128GPUs.dat
+    │   │   ├── HPL-OOC-16GPUs.dat
+    │   │   ├── HPL-OOC-1GPU.dat
+    │   │   ├── HPL-OOC-2GPUs.dat
+    │   │   ├── HPL-OOC-32GPUs.dat
+    │   │   ├── HPL-OOC-4GPUs.dat
+    │   │   ├── HPL-OOC-64GPUs.dat
+    │   │   └── HPL-OOC-8GPUs.dat
+    │   ├── sample-slurm
+    │   │   ├── hpl-enroot-1N.sub
+    │   │   ├── hpl-enroot-8N.sub
+    │   │   ├── hpl-singularity-1N.sub
+    │   │   └── hpl-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl
+    ├── hpl-mxp-linux-x86_64
+    │   ├── COPYRIGHT-CLI11
+    │   ├── hpl-mxp.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-slurm
+    │   │   ├── hpl-mxp-enroot-16N.sub
+    │   │   ├── hpl-mxp-enroot-1N.sub
+    │   │   ├── hpl-mxp-enroot-2N.sub
+    │   │   ├── hpl-mxp-enroot-32N.sub
+    │   │   ├── hpl-mxp-enroot-4N.sub
+    │   │   ├── hpl-mxp-enroot-64N.sub
+    │   │   ├── hpl-mxp-enroot-8N.sub
+    │   │   ├── hpl-mxp-singularity-1N.sub
+    │   │   └── hpl-mxp-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl_mxp
+    ├── hpl-mxp.sh -> hpl-mxp-linux-x86_64/hpl-mxp.sh
+    ├── hpl.sh -> hpl-linux-x86_64/hpl.sh
+    ├── lib
+    │   ├── nvshmem
+    │   │   ├── libnvshmem_host.so -> libnvshmem_host.so.3
+    │   │   ├── libnvshmem_host.so.3 -> libnvshmem_host.so.3.4.5
+    │   │   ├── libnvshmem_host.so.3.4.5
+    │   │   ├── LICENSE.txt
+    │   │   ├── nvshmem_bootstrap_mpi.so -> nvshmem_bootstrap_mpi.so.3
+    │   │   ├── nvshmem_bootstrap_mpi.so.3 -> nvshmem_bootstrap_mpi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_mpi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi2.so -> nvshmem_bootstrap_pmi2.so.3
+    │   │   ├── nvshmem_bootstrap_pmi2.so.3 -> nvshmem_bootstrap_pmi2.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi2.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi.so -> nvshmem_bootstrap_pmi.so.3
+    │   │   ├── nvshmem_bootstrap_pmi.so.3 -> nvshmem_bootstrap_pmi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmix.so -> nvshmem_bootstrap_pmix.so.3
+    │   │   ├── nvshmem_bootstrap_pmix.so.3 -> nvshmem_bootstrap_pmix.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmix.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_shmem.so -> nvshmem_bootstrap_shmem.so.3
+    │   │   ├── nvshmem_bootstrap_shmem.so.3 -> nvshmem_bootstrap_shmem.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_shmem.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_uid.so -> nvshmem_bootstrap_uid.so.3
+    │   │   ├── nvshmem_bootstrap_uid.so.3 -> nvshmem_bootstrap_uid.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_uid.so.3.0.0
+    │   │   ├── nvshmem_transport_ibdevx.so -> nvshmem_transport_ibdevx.so.3
+    │   │   ├── nvshmem_transport_ibdevx.so.3 -> nvshmem_transport_ibdevx.so.3.0.0
+    │   │   ├── nvshmem_transport_ibdevx.so.3.0.0
+    │   │   ├── nvshmem_transport_ibgda.so -> nvshmem_transport_ibgda.so.3
+    │   │   ├── nvshmem_transport_ibgda.so.3 -> nvshmem_transport_ibgda.so.3.0.0
+    │   │   ├── nvshmem_transport_ibgda.so.3.0.0
+    │   │   ├── nvshmem_transport_ibrc.so -> nvshmem_transport_ibrc.so.3
+    │   │   ├── nvshmem_transport_ibrc.so.3 -> nvshmem_transport_ibrc.so.3.0.0
+    │   │   ├── nvshmem_transport_ibrc.so.3.0.0
+    │   │   ├── nvshmem_transport_libfabric.so -> nvshmem_transport_libfabric.so.3
+    │   │   ├── nvshmem_transport_libfabric.so.3 -> nvshmem_transport_libfabric.so.3.0.0
+    │   │   ├── nvshmem_transport_libfabric.so.3.0.0
+    │   │   ├── nvshmem_transport_ucx.so -> nvshmem_transport_ucx.so.3
+    │   │   ├── nvshmem_transport_ucx.so.3 -> nvshmem_transport_ucx.so.3.0.0
+    │   │   └── nvshmem_transport_ucx.so.3.0.0
+    │   └── omp
+    │       ├── libgomp.so -> libomp.so
+    │       ├── libgomp.so.1 -> libgomp.so
+    │       ├── libiomp5.so -> libomp.so
+    │       ├── libompd.so
+    │       ├── libomp.so
+    │       └── LICENSE.txt
+    ├── license.txt
+    ├── microbenchmarks
+    │   ├── binding.sh
+    │   ├── gemm_parse_results.sh -> gemm_tests/parse_results.sh
+    │   ├── gemm_tests
+    │   │   ├── gemm
+    │   │   ├── gemm_tests.sh
+    │   │   └── parse_results.sh
+    │   ├── gemm_tests.sh -> gemm_tests/gemm_tests.sh
+    │   ├── nccl_tests
+    │   │   ├── all_gather_perf -> /usr/local/bin/all_gather_perf
+    │   │   ├── all_gather_perf_mpi -> /usr/local/bin/all_gather_perf_mpi
+    │   │   ├── all_reduce_perf -> /usr/local/bin/all_reduce_perf
+    │   │   ├── all_reduce_perf_mpi -> /usr/local/bin/all_reduce_perf_mpi
+    │   │   ├── alltoall_perf -> /usr/local/bin/alltoall_perf
+    │   │   ├── alltoall_perf_mpi -> /usr/local/bin/alltoall_perf_mpi
+    │   │   ├── broadcast_perf -> /usr/local/bin/broadcast_perf
+    │   │   ├── broadcast_perf_mpi -> /usr/local/bin/broadcast_perf_mpi
+    │   │   ├── gather_perf -> /usr/local/bin/gather_perf
+    │   │   ├── gather_perf_mpi -> /usr/local/bin/gather_perf_mpi
+    │   │   ├── hypercube_perf -> /usr/local/bin/hypercube_perf
+    │   │   ├── hypercube_perf_mpi -> /usr/local/bin/hypercube_perf_mpi
+    │   │   ├── reduce_perf -> /usr/local/bin/reduce_perf
+    │   │   ├── reduce_perf_mpi -> /usr/local/bin/reduce_perf_mpi
+    │   │   ├── reduce_scatter_perf -> /usr/local/bin/reduce_scatter_perf
+    │   │   ├── reduce_scatter_perf_mpi -> /usr/local/bin/reduce_scatter_perf_mpi
+    │   │   ├── scatter_perf -> /usr/local/bin/scatter_perf
+    │   │   ├── scatter_perf_mpi -> /usr/local/bin/scatter_perf_mpi
+    │   │   ├── sendrecv_perf -> /usr/local/bin/sendrecv_perf
+    │   │   └── sendrecv_perf_mpi -> /usr/local/bin/sendrecv_perf_mpi
+    │   ├── nccl_tests.sh
+    │   ├── nvshmem_device_tests.sh
+    │   ├── nvshmem_host_tests.sh
+    │   ├── nvshmem_tests
+    │   │   ├── device
+    │   │   │   ├── coll
+    │   │   │   │   ├── alltoall_latency
+    │   │   │   │   ├── alltoall_latency.cubin
+    │   │   │   │   ├── bcast_latency
+    │   │   │   │   └── bcast_latency.cubin
+    │   │   │   └── pt-to-pt
+    │   │   │       ├── shmem_get_bw
+    │   │   │       └── shmem_put_bw
+    │   │   └── host
+    │   │       ├── coll
+    │   │       │   ├── alltoall_on_stream
+    │   │       │   └── broadcast_on_stream
+    │   │       └── pt-to-pt
+    │   │           └── bw
+    │   ├── osu_mpi_tests
+    │   │   ├── LICENSE.txt
+    │   │   └── mpi
+    │   │       ├── collective
+    │   │       │   ├── osu_allgather
+    │   │       │   ├── osu_allgatherv
+    │   │       │   ├── osu_allreduce
+    │   │       │   ├── osu_alltoall
+    │   │       │   ├── osu_alltoallv
+    │   │       │   ├── osu_alltoallw
+    │   │       │   ├── osu_barrier
+    │   │       │   ├── osu_bcast
+    │   │       │   ├── osu_gather
+    │   │       │   ├── osu_gatherv
+    │   │       │   ├── osu_iallgather
+    │   │       │   ├── osu_iallgatherv
+    │   │       │   ├── osu_iallreduce
+    │   │       │   ├── osu_ialltoall
+    │   │       │   ├── osu_ialltoallv
+    │   │       │   ├── osu_ialltoallw
+    │   │       │   ├── osu_ibarrier
+    │   │       │   ├── osu_ibcast
+    │   │       │   ├── osu_igather
+    │   │       │   ├── osu_igatherv
+    │   │       │   ├── osu_ineighbor_allgather
+    │   │       │   ├── osu_ineighbor_allgatherv
+    │   │       │   ├── osu_ineighbor_alltoall
+    │   │       │   ├── osu_ineighbor_alltoallv
+    │   │       │   ├── osu_ineighbor_alltoallw
+    │   │       │   ├── osu_ireduce
+    │   │       │   ├── osu_ireduce_scatter
+    │   │       │   ├── osu_ireduce_scatter_block
+    │   │       │   ├── osu_iscatter
+    │   │       │   ├── osu_iscatterv
+    │   │       │   ├── osu_neighbor_allgather
+    │   │       │   ├── osu_neighbor_allgatherv
+    │   │       │   ├── osu_neighbor_alltoall
+    │   │       │   ├── osu_neighbor_alltoallv
+    │   │       │   ├── osu_neighbor_alltoallw
+    │   │       │   ├── osu_reduce
+    │   │       │   ├── osu_reduce_scatter
+    │   │       │   ├── osu_reduce_scatter_block
+    │   │       │   ├── osu_scatter
+    │   │       │   └── osu_scatterv
+    │   │       ├── congestion
+    │   │       │   ├── osu_bw_fan_in
+    │   │       │   └── osu_bw_fan_out
+    │   │       ├── one-sided
+    │   │       │   ├── osu_acc_latency
+    │   │       │   ├── osu_cas_latency
+    │   │       │   ├── osu_fop_latency
+    │   │       │   ├── osu_get_acc_latency
+    │   │       │   ├── osu_get_bw
+    │   │       │   ├── osu_get_latency
+    │   │       │   ├── osu_put_bibw
+    │   │       │   ├── osu_put_bw
+    │   │       │   └── osu_put_latency
+    │   │       ├── pt2pt
+    │   │       │   ├── osu_bibw
+    │   │       │   ├── osu_bw
+    │   │       │   ├── osu_latency
+    │   │       │   ├── osu_latency_mp
+    │   │       │   ├── osu_latency_mt
+    │   │       │   ├── osu_mbw_mr
+    │   │       │   ├── osu_multi_lat
+    │   │       │   └── persistent
+    │   │       │       ├── osu_bibw_persistent
+    │   │       │       ├── osu_bw_persistent
+    │   │       │       └── osu_latency_persistent
+    │   │       └── startup
+    │   │           ├── osu_hello
+    │   │           └── osu_init
+    │   ├── osu_mpi_tests.sh
+    │   └── run_benchmark.sh
+    ├── source_code
+    │   ├── cli11
+    │   │   └── cli11.tar.gz
+    │   ├── hpcg
+    │   │   └── hpcg.zip
+    │   ├── hpl
+    │   │   └── hpl.tar.gz
+    │   ├── hpl_mxp
+    │   │   └── hpl_mxp.zip
+    │   ├── llvm-omp
+    │   │   └── llvm-omp.tar.xz
+    │   ├── nvshmem
+    │   │   └── nvshmem_source.tar.gz
+    │   ├── osu_mpi
+    │   │   └── osu_mpi.tar.gz
+    │   └── stream
+    │       └── stream.zip
+    ├── stream-gpu-linux-x86_64
+    │   ├── LICENSE.txt
+    │   ├── READ.ME
+    │   ├── stream-gpu-test.sh
+    │   ├── stream_test
+    │   └── stream_test_fp32
+    ├── stream-gpu-test.sh -> stream-gpu-linux-x86_64/stream-gpu-test.sh
+    └── third-party.txt
+
+40 directories, 293 files

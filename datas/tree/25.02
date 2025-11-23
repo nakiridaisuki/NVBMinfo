@@ -1,0 +1,163 @@
+./tmp/workspaces/25.02
+└── workspace
+    ├── hpc-benchmarks-gpu-env.sh
+    ├── hpcg-linux-x86_64
+    │   ├── COPYRIGHT-HPCG-3.1
+    │   ├── hpcg.sh
+    │   ├── README.md
+    │   ├── RUNNING-x86
+    │   ├── sample-dat
+    │   │   └── hpcg.dat
+    │   ├── sample-slurm
+    │   │   ├── hpcg-enroot-dgx-1N.sub
+    │   │   ├── hpcg-enroot-dgx-8N.sub
+    │   │   ├── hpcg-singularity-dgx-1N.sub
+    │   │   └── hpcg-singularity-dgx-8N.sub
+    │   ├── TUNING
+    │   └── xhpcg
+    ├── hpcg.sh -> hpcg-linux-x86_64/hpcg.sh
+    ├── hpl-linux-x86_64
+    │   ├── COPYRIGHT-HPL-2.1
+    │   ├── hpl.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-dat
+    │   │   ├── HPL-1024GPUs.dat -> HPL-dgx-128N.dat
+    │   │   ├── HPL-128GPUs.dat -> HPL-dgx-16N.dat
+    │   │   ├── HPL-16GPUs.dat -> HPL-dgx-2N.dat
+    │   │   ├── HPL-1GPU.dat -> HPL-dgx-1N-1.dat
+    │   │   ├── HPL-256GPUs.dat -> HPL-dgx-32N.dat
+    │   │   ├── HPL-2GPUs.dat -> HPL-dgx-1N-2.dat
+    │   │   ├── HPL-32GPUs.dat -> HPL-dgx-4N.dat
+    │   │   ├── HPL-4GPUs.dat -> HPL-dgx-1N-4.dat
+    │   │   ├── HPL-512GPUs.dat -> HPL-dgx-64N.dat
+    │   │   ├── HPL-64GPUs.dat -> HPL-dgx-8N.dat
+    │   │   ├── HPL-8GPUs.dat -> HPL-dgx-1N.dat
+    │   │   ├── HPL-B200-128GPUs.dat
+    │   │   ├── HPL-B200-16GPUs.dat
+    │   │   ├── HPL-B200-1GPU.dat
+    │   │   ├── HPL-B200-256GPUs.dat
+    │   │   ├── HPL-B200-2GPUs.dat
+    │   │   ├── HPL-B200-32GPUs.dat
+    │   │   ├── HPL-B200-4GPUs.dat
+    │   │   ├── HPL-B200-512GPUs.dat
+    │   │   ├── HPL-B200-64GPUs.dat
+    │   │   ├── HPL-B200-8GPUs.dat
+    │   │   ├── HPL-dgx-128N.dat
+    │   │   ├── HPL-dgx-16N.dat
+    │   │   ├── HPL-dgx-1N-1.dat
+    │   │   ├── HPL-dgx-1N-2.dat
+    │   │   ├── HPL-dgx-1N-4.dat
+    │   │   ├── HPL-dgx-1N.dat
+    │   │   ├── HPL-dgx-2N.dat
+    │   │   ├── HPL-dgx-32N.dat
+    │   │   ├── HPL-dgx-4N.dat
+    │   │   ├── HPL-dgx-64N.dat
+    │   │   ├── HPL-dgx-8N.dat
+    │   │   ├── HPL-GH-128GPUs.dat
+    │   │   ├── HPL-GH-16GPUs.dat
+    │   │   ├── HPL-GH-1GPU.dat
+    │   │   ├── HPL-GH-256GPUs.dat
+    │   │   ├── HPL-GH-2GPUs.dat
+    │   │   ├── HPL-GH-32GPUs.dat
+    │   │   ├── HPL-GH-4GPUs.dat
+    │   │   ├── HPL-GH-512GPUs.dat
+    │   │   ├── HPL-GH-64GPUs.dat
+    │   │   ├── HPL-GH-8GPUs.dat
+    │   │   ├── HPL-H200-16GPUs.dat
+    │   │   ├── HPL-H200-1GPU.dat
+    │   │   ├── HPL-H200-2GPUs.dat
+    │   │   ├── HPL-H200-32GPUs.dat
+    │   │   ├── HPL-H200-4GPUs.dat
+    │   │   ├── HPL-H200-8GPUs.dat
+    │   │   ├── HPL-OOC-128GPUs.dat
+    │   │   ├── HPL-OOC-16GPUs.dat
+    │   │   ├── HPL-OOC-1GPU.dat
+    │   │   ├── HPL-OOC-2GPUs.dat
+    │   │   ├── HPL-OOC-32GPUs.dat
+    │   │   ├── HPL-OOC-4GPUs.dat
+    │   │   ├── HPL-OOC-64GPUs.dat
+    │   │   └── HPL-OOC-8GPUs.dat
+    │   ├── sample-slurm
+    │   │   ├── hpl-enroot-1N.sub
+    │   │   ├── hpl-enroot-8N.sub
+    │   │   ├── hpl-singularity-1N.sub
+    │   │   └── hpl-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl
+    ├── hpl-mxp-linux-x86_64
+    │   ├── COPYRIGHT-CLI11
+    │   ├── hpl-mxp.sh
+    │   ├── README
+    │   ├── RUNNING
+    │   ├── sample-slurm
+    │   │   ├── hpl-mxp-enroot-16N.sub
+    │   │   ├── hpl-mxp-enroot-1N.sub
+    │   │   ├── hpl-mxp-enroot-2N.sub
+    │   │   ├── hpl-mxp-enroot-32N.sub
+    │   │   ├── hpl-mxp-enroot-4N.sub
+    │   │   ├── hpl-mxp-enroot-64N.sub
+    │   │   ├── hpl-mxp-enroot-8N.sub
+    │   │   ├── hpl-mxp-singularity-1N.sub
+    │   │   └── hpl-mxp-singularity-8N.sub
+    │   ├── TUNING
+    │   └── xhpl_mxp
+    ├── hpl-mxp.sh -> hpl-mxp-linux-x86_64/hpl-mxp.sh
+    ├── hpl.sh -> hpl-linux-x86_64/hpl.sh
+    ├── lib
+    │   ├── nvshmem
+    │   │   ├── libnvshmem_host.so -> libnvshmem_host.so.3
+    │   │   ├── libnvshmem_host.so.3 -> libnvshmem_host.so.3.2.5
+    │   │   ├── libnvshmem_host.so.3.2.5
+    │   │   ├── LICENSE.txt
+    │   │   ├── nvshmem_bootstrap_mpi.so -> nvshmem_bootstrap_mpi.so.3
+    │   │   ├── nvshmem_bootstrap_mpi.so.3 -> nvshmem_bootstrap_mpi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_mpi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi2.so -> nvshmem_bootstrap_pmi2.so.3
+    │   │   ├── nvshmem_bootstrap_pmi2.so.3 -> nvshmem_bootstrap_pmi2.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi2.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi.so -> nvshmem_bootstrap_pmi.so.3
+    │   │   ├── nvshmem_bootstrap_pmi.so.3 -> nvshmem_bootstrap_pmi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmi.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmix.so -> nvshmem_bootstrap_pmix.so.3
+    │   │   ├── nvshmem_bootstrap_pmix.so.3 -> nvshmem_bootstrap_pmix.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_pmix.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_shmem.so -> nvshmem_bootstrap_shmem.so.3
+    │   │   ├── nvshmem_bootstrap_shmem.so.3 -> nvshmem_bootstrap_shmem.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_shmem.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_uid.so -> nvshmem_bootstrap_uid.so.3
+    │   │   ├── nvshmem_bootstrap_uid.so.3 -> nvshmem_bootstrap_uid.so.3.0.0
+    │   │   ├── nvshmem_bootstrap_uid.so.3.0.0
+    │   │   ├── nvshmem_transport_ibdevx.so -> nvshmem_transport_ibdevx.so.3
+    │   │   ├── nvshmem_transport_ibdevx.so.3 -> nvshmem_transport_ibdevx.so.3.0.0
+    │   │   ├── nvshmem_transport_ibdevx.so.3.0.0
+    │   │   ├── nvshmem_transport_ibgda.so -> nvshmem_transport_ibgda.so.3
+    │   │   ├── nvshmem_transport_ibgda.so.3 -> nvshmem_transport_ibgda.so.3.0.0
+    │   │   ├── nvshmem_transport_ibgda.so.3.0.0
+    │   │   ├── nvshmem_transport_ibrc.so -> nvshmem_transport_ibrc.so.3
+    │   │   ├── nvshmem_transport_ibrc.so.3 -> nvshmem_transport_ibrc.so.3.0.0
+    │   │   ├── nvshmem_transport_ibrc.so.3.0.0
+    │   │   ├── nvshmem_transport_libfabric.so -> nvshmem_transport_libfabric.so.3
+    │   │   ├── nvshmem_transport_libfabric.so.3 -> nvshmem_transport_libfabric.so.3.0.0
+    │   │   ├── nvshmem_transport_libfabric.so.3.0.0
+    │   │   ├── nvshmem_transport_ucx.so -> nvshmem_transport_ucx.so.3
+    │   │   ├── nvshmem_transport_ucx.so.3 -> nvshmem_transport_ucx.so.3.0.0
+    │   │   └── nvshmem_transport_ucx.so.3.0.0
+    │   └── omp
+    │       ├── libgomp.so -> libomp.so
+    │       ├── libgomp.so.1 -> libgomp.so
+    │       ├── libiomp5.so -> libomp.so
+    │       ├── libompd.so
+    │       ├── libomp.so
+    │       └── LICENSE.txt
+    ├── NVIDIA_Deep_Learning_Container_License.pdf
+    ├── stream-gpu-linux-x86_64
+    │   ├── LICENSE.txt
+    │   ├── READ.ME
+    │   ├── stream-gpu-test.sh
+    │   ├── stream_test
+    │   └── stream_test_fp32
+    ├── stream-gpu-test.sh -> stream-gpu-linux-x86_64/stream-gpu-test.sh
+    └── third-party.txt
+
+13 directories, 147 files

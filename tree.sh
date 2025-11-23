@@ -2,7 +2,7 @@
 set -e
 
 INFO_DIR=./datas/tree
-WORKSPACE_DIR=$HOME/workspaces
+WORKSPACE_DIR=./tmp/workspaces
 
 workspaces=$(ls -1 $WORKSPACE_DIR)
 

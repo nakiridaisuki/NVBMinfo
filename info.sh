@@ -2,7 +2,7 @@
 set -e
 
 SIF_DIR=./tmp/sifs
-sif_path=$(find $SIF_DIR -name $(tail -n 1 ./all_versions))
+sif_path=$(find $SIF_DIR -name *$(head -n 1 ./all_versions)*)
 
 ./copy_workspace.sh
 ./tree.sh
