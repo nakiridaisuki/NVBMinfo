@@ -9,7 +9,7 @@ TYPES=$(cat $HOME/NVBMinfo/all_types)
 for type in $TYPES; do
     echo $type
     for id in $EXEC_IDs; do
-        exec_path=$(find $WORKSPACE_DIR/$id -name *$type*)
+        exec_path=$(find $WORKSPACE_DIR/$id -name *$type)
         echo $exec_path
         if ! [[ -z $exec_path ]]; then
             mkdir -vp $INFO_DIR/$type
