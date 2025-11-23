@@ -1,13 +1,9 @@
 #!/bin/bash
 set -e
-SIF_DIR=$HOME/sifs
-sifs=$(ls -1 $SIF_DIR)
 
-./get_tree.sh
+SIF_DIR=./tmp/sifs
+sif_path=$(find $SIF_DIR -name $(tail -n 1 ./all_versions))
 
-for sif in $sifs; do
-    file_id=${sif:15:-4}
-    singularity run $SIF_DIR/$sif ~/NVBMinfo/get_exec.sh $file_id
-done
-
-singularity run $SIF_DIR/${sifs[-1]} ~/NVBMinfo/extract.sh
+./copy_workspace.sh
+./tree.sh
+singularity run $sif_path ~/NVBMinfo/dump.sh
