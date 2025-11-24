@@ -18,7 +18,8 @@ NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當�
 | Maxwell | sm_50,sm_52,sm_53 | GTX 900 Series, RTX 900M Series |
 | Kepler | sm_30,sm_35,sm_37 | GTX 700 Series, GTX 600 Series |
 | Fermi | sm_20 | GeForce 500 Series |
-> from Google AI at 2025
+> Generate by Google AI at 2025
+> You had better to search yourself.
 
 ## 雙精度浮點測試 HPL
 |version     |sm_52   |sm_60   |sm_70   |sm_80   |sm_89   |sm_90   |sm_100  |sm_100a |sm_101  |sm_101a |sm_120  |
