@@ -1,4 +1,5 @@
 | [中文](./README.md) | [English](./README_en.md) |
+> Translated by Gemini 2.5 Pro
 # NVIDIA HPC Benchmark Hardware Compatibility Test
 Our beloved NVIDIA's official documentation for its HPC Benchmarks is notoriously incomplete and fragmented, to the point where it's a crapshoot whether a randomly downloaded container image will even run. That's why these tables were made.
 
