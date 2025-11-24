@@ -71,7 +71,7 @@ NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當�
 |25.09       |O       |O       |O       |
 
 ## 參考
-[nvidia hpc benchmark](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks?version=25.09)
-[cuobjdump](https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html#cuobjdump)
-[compute capability](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities)
-Google AI Studio Gemini 2.5 Pro
+[nvidia hpc benchmark](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks?version=25.09)  
+[cuobjdump](https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html#cuobjdump)  
+[compute capability](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities)  
+Google AI Studio Gemini 2.5 Pro  
