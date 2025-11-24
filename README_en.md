@@ -79,7 +79,7 @@ This document uses the command `cuobjdump -lelf <exec>` to inspect the benchmark
 |25.04       |O       |O       |O       |
 |25.09       |O       |O       |O       |
 
-## 參考
+## References
 [nvidia hpc benchmark](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks?version=25.09)  
 [cuobjdump](https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html#cuobjdump)  
 [compute capability](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities)  
