@@ -1,5 +1,12 @@
+# NVIDIA HPC Benchmark 硬體相容性測試
+我們親愛的 NVIDIA 在 HPC Benchmark 的官方文件那叫一個殘缺不全，以至於隨便下載一個容器映像檔下來後，能不能跑都要靠通靈，遂製作了這些表。 
+NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當前硬體的 CC 低於編譯的 CC 版本，那大概率是無法正確執行。 
+本紀錄用 `cuobjdump -lelf <exec>` 來檢查每個版本的 image 中， Benchmark 執行檔當時編譯時所選擇的計算架構。 
+如果該版本的執行檔中並沒有你當前的硬體所對應的 CC，而且實際嘗試後也無法正常運行，那就別浪費時間直接換低版本吧。
+
 ## NVIDIA SM Generation List
-| Architecture | SM Generation | Examples |
+計算架構與 CC 的參考對應表
+| Architecture | Compute Capability | Examples |
 | --- | --- | --- |
 | Blackwell | sm_100,sm_101,sm_120 | Upcoming GPUs |
 | Hopper | sm_90,sm_90a | H100, H200 |
@@ -13,7 +20,7 @@
 | Fermi | sm_20 | GeForce 500 Series |
 > from Google AI at 2025
 
-## xhpl
+## 雙精度浮點測試 HPL
 |version     |sm_52   |sm_60   |sm_70   |sm_80   |sm_89   |sm_90   |sm_100  |sm_100a |sm_101  |sm_101a |sm_120  |
 |:---:       |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |
 |20.10-hpl   |        |O       |O       |O       |        |        |        |        |        |        |        |
@@ -28,7 +35,7 @@
 |25.04       |        |        |        |O       |        |O       |O       |O       |O       |O       |O       |
 |25.09       |        |        |        |O       |O       |O       |O       |O       |O       |O       |O       |
 
-## xhpcg
+## 雙精度頻寬測試 HPCG
 |version     |sm_50   |sm_60   |sm_61   |sm_70   |sm_75   |sm_80   |sm_86   |sm_90   |sm_100  |sm_100a |
 |:---:       |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |
 |20.10-hpcg  |        |O       |        |O       |        |O       |        |        |        |        |
@@ -43,7 +50,16 @@
 |25.04       |        |        |        |        |        |O       |        |O       |        |O       |
 |25.09       |        |        |        |        |        |O       |        |O       |O       |        |
 
-## xhpl_mxp
+## 混合精度浮點測試 HPL-MxP & HPL_AI
+### xhpl_ai
+|version     |sm_60   |sm_70   |sm_80   |sm_90   |
+|:---:       |:---:   |:---:   |:---:   |:---:   |
+|20.10-hpl   |O       |O       |O       |        |
+|21.4-hpl    |        |O       |        |        |
+|23.3        |        |O       |O       |O       |
+|23.5        |        |O       |O       |O       |
+
+### xhpl_mxp
 |version     |sm_80   |sm_90   |sm_100a |
 |:---:       |:---:   |:---:   |:---:   |
 |23.10       |O       |O       |        |
@@ -53,12 +69,4 @@
 |25.02       |O       |O       |O       |
 |25.04       |O       |O       |O       |
 |25.09       |O       |O       |O       |
-
-## xhpl_ai
-|version     |sm_60   |sm_70   |sm_80   |sm_90   |
-|:---:       |:---:   |:---:   |:---:   |:---:   |
-|20.10-hpl   |O       |O       |O       |        |
-|21.4-hpl    |        |O       |        |        |
-|23.3        |        |O       |O       |O       |
-|23.5        |        |O       |O       |O       |
 
