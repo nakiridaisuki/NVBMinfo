@@ -1,14 +1,17 @@
 | [中文](./README.md) | [English](./README_en.md) |
+# NVIDIA HPC Benchmark Hardware Compatibility Test
+Our beloved NVIDIA's official documentation for its HPC Benchmarks is notoriously incomplete and fragmented, to the point where it's a crapshoot whether a randomly downloaded container image will even run. That's why these tables were made.
 
-# NVIDIA HPC Benchmark 硬體相容性測試
-我們親愛的 NVIDIA 在 HPC Benchmark 的官方文件那叫一個殘缺不全，以至於隨便下載一個容器映像檔下來後，能不能跑都要靠通靈，遂製作了這些表。  
-NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當前硬體的 CC 低於編譯的 CC 版本，那大概率是無法正確執行。   
-如果該版本的執行檔中並沒有你當前的硬體所對應的 CC，而且實際嘗試後也無法正常運行，那就別浪費時間直接換低版本吧。  
+Each generation of NVIDIA GPU architecture has a different corresponding Compute Capability (CC). If your hardware's CC is lower than the CC version the benchmark was compiled for, it will most likely fail to run correctly.
 
-## 這是甚麼
-在編譯 CUDA 程式碼時，需要告訴 nvcc 要為哪個顯卡架構編譯二進制檔案，也就是 `-gencode, -arch, -code` 等選項。  
-對於一個計算能力，假設是 V100 的 7.0，那編譯時的代號就會是 sm_70。  
-本紀錄用 `cuobjdump -lelf <exec>` 來檢查每個版本的 image 中， Benchmark 執行檔當時編譯時所選擇的計算架構。  
+If a given executable doesn't include the CC for your hardware, and you've confirmed after trying that it won't run, don't waste your time—just switch to an older version.
+
+## What is this?
+When compiling CUDA code, you need to tell the nvcc compiler which GPU architecture(s) to build the binary for. This is done using flags like `-gencode, -arch, and -code`.
+
+For a given Compute Capability—for instance, CC 7.0 for the V100 GPU—the corresponding compilation target is sm_70.
+
+This document uses the command `cuobjdump -lelf <exec>` to inspect the benchmark executable within each version's image and determine which compute architectures it was compiled for.
 
 ## NVIDIA SM Generation List
 | Architecture | Compute Capability | Examples |
@@ -26,7 +29,7 @@ NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當�
 
 [From wiki](https://en.wikipedia.org/wiki/CUDA#GPUs_supported)
 
-## 雙精度浮點測試 HPL
+## HPL (Double-Precision Floating-Point Test)
 |version     |sm_52   |sm_60   |sm_70   |sm_80   |sm_89   |sm_90   |sm_100  |sm_100a |sm_101  |sm_101a |sm_120  |
 |:---:       |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |
 |20.10-hpl   |        |O       |O       |O       |        |        |        |        |        |        |        |
@@ -41,7 +44,7 @@ NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當�
 |25.04       |        |        |        |O       |        |O       |O       |O       |O       |O       |O       |
 |25.09       |        |        |        |O       |O       |O       |O       |O       |O       |O       |O       |
 
-## 雙精度頻寬測試 HPCG
+## HPCG (Double-Precision Performance Test)
 |version     |sm_50   |sm_60   |sm_61   |sm_70   |sm_75   |sm_80   |sm_86   |sm_90   |sm_100  |sm_100a |
 |:---:       |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |:---:   |
 |20.10-hpcg  |        |O       |        |O       |        |O       |        |        |        |        |
@@ -56,7 +59,7 @@ NVIDIA 的 GPU 每代的架構所對應的計算能力 CC 都不同，如果當�
 |25.04       |        |        |        |        |        |O       |        |O       |        |O       |
 |25.09       |        |        |        |        |        |O       |        |O       |O       |        |
 
-## 混合精度浮點測試 HPL-MxP & HPL_AI
+## HPL-MxP & HPL-AI (Mixed-Precision Floating-Point Tests)
 ### xhpl_ai
 |version     |sm_60   |sm_70   |sm_80   |sm_90   |
 |:---:       |:---:   |:---:   |:---:   |:---:   |
